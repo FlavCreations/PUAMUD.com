@@ -1,0 +1,63 @@
+:root {
+  --bg-0: #050a12;
+  --bg-1: #0d1b2a;
+  --line: rgba(148, 163, 184, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Chakra Petch", sans-serif;
+  background:
+    radial-gradient(80rem 50rem at 85% -10%, rgba(45, 212, 191, 0.17), transparent 50%),
+    radial-gradient(80rem 50rem at -10% 115%, rgba(56, 189, 248, 0.2), transparent 55%),
+    linear-gradient(160deg, var(--bg-0), var(--bg-1));
+}
+
+.atmo {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 44px 44px;
+  opacity: 0.3;
+  mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.8) 45%, transparent 100%);
+}
+
+.card {
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  background: rgba(2, 6, 23, 0.55);
+  backdrop-filter: blur(8px);
+  border-radius: 0.9rem;
+}
+
+.reveal {
+  animation: rise 700ms ease-out both;
+}
+
+.reveal:nth-of-type(2) {
+  animation-delay: 120ms;
+}
+
+.reveal:nth-of-type(3) {
+  animation-delay: 220ms;
+}
+
+.reveal:nth-of-type(4) {
+  animation-delay: 320ms;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

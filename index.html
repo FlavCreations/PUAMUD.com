@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PUAMUD | Game Dev</title>
+    <meta
+      name="description"
+      content="PUAMUD game development platforms, devlogs, and experiments."
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="min-h-screen text-slate-100 antialiased">
+    <div class="atmo" aria-hidden="true"></div>
+
+    <main class="mx-auto max-w-5xl px-6 py-12 sm:py-20">
+      <header class="mb-14 flex flex-wrap items-center justify-between gap-4">
+        <a href="#" class="text-xl font-semibold tracking-wider">PUAMUD</a>
+        <nav class="flex items-center gap-5 text-sm text-slate-200/90">
+          <a class="hover:text-cyan-300 transition-colors" href="#platforms">Platforms</a>
+          <a class="hover:text-cyan-300 transition-colors" href="#devlog">Devlog</a>
+          <a class="hover:text-cyan-300 transition-colors" href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <section class="reveal mb-16 sm:mb-20 text-center">
+        <p class="mb-4 inline-flex rounded-full border border-cyan-200/30 bg-cyan-300/10 px-3 py-1 text-xs uppercase tracking-[0.2em] text-cyan-200">
+          Pick-Up-Anywhere MUD
+        </p>
+        <h1 class="mx-auto max-w-3xl text-4xl font-bold leading-tight sm:text-6xl">
+          PUAMUD
+        </h1>
+        <p class="mx-auto mt-6 max-w-2xl text-base text-slate-300 sm:text-lg">
+          PUAMUD (Pick-Up-Anywhere Multi-User Dungeon) is a new type of MUD game being developed for discord and 
+          discord-like platforms with an emphasis on character building and social interaction.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-3">
+          <a
+            href="#platforms"
+            class="rounded-md bg-cyan-300 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-200"
+          >
+            See Platforms
+          </a>
+          <a
+            href="#devlog"
+            class="rounded-md border border-slate-200/20 px-5 py-3 text-sm font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+          >
+            Read Devlog
+          </a>
+        </div>
+      </section>
+
+      <section id="platforms" class="reveal mb-16 grid gap-5 sm:mb-20 sm:grid-cols-2">
+        <article class="card p-6 text-left">
+          <p class="mb-3 text-xs uppercase tracking-[0.18em] text-cyan-200">Active</p>
+          <h2 class="text-2xl font-semibold">Discord</h2>
+          <p class="mt-3 text-slate-300">
+            PUAMUD is being developed to be played entirely within Discord. Players can interact with the game through text commands, slash commands, and Discord's interactive interfaces.
+          </p>
+        </article>
+
+        <!--article class="card p-6">
+          <p class="mb-3 text-xs uppercase tracking-[0.18em] text-cyan-200">Prototype</p>
+          <h2 class="text-2xl font-semibold">Dungeon Seeds</h2>
+          <p class="mt-3 text-slate-300">
+            A procedural dungeon sandbox for testing loot pacing and room generation.
+          </p>
+        </article-->
+      </section>
+
+      <section id="devlog" class="reveal mb-16 sm:mb-20">
+        <div class="card p-6 sm:p-8">
+          <h2 class="text-2xl font-semibold">Latest Devlog</h2>
+          <p class="mt-4 text-slate-300">
+            - 8/3/2026: Changed the project to a new name, PUAMUD, and started a new devlog. The project is now focused 
+            on being a new style of MUD game for Discord and similar platforms.
+          </p>
+        </div>
+      </section>
+
+      <footer id="contact" class="reveal scroll-mt-24 border-t border-slate-200/10 pt-6 text-sm text-slate-300">
+        <p class="mb-2 text-xs uppercase tracking-[0.16em] text-cyan-200">Contact</p>
+        <p>Discord Contact: Flavius</p>
+        <p class="mt-1"></p>
+      </footer>
+    </main>
+  </body>
+</html>

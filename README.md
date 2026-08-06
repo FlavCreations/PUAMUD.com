@@ -1,7 +1,7 @@
 # PUAMUD.com
 
 Super-light static gamedev website for GitHub Pages.
-
+ 
 ## Stack
 
 - Plain HTML

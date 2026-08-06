@@ -35,6 +35,13 @@ body {
   border-radius: 0.9rem;
 }
 
+.hero-icon {
+  width: clamp(96px, 18vw, 160px);
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 12px 32px rgba(34, 211, 238, 0.22));
+}
+
 .reveal {
   animation: rise 700ms ease-out both;
 }

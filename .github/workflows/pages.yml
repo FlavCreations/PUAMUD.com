@@ -1,0 +1,10 @@
+- name: Upload artifact
+  uses: actions/upload-pages-artifact@v3
+  with:
+    path: |
+      .
+      !.git/
+      !.github/
+      !node_modules/
+      !**/*.log
+      !README.md
